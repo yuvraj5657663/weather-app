@@ -1,8 +1,7 @@
-// script.js
 async function fetchWeather() {
   const city = document.getElementById("search").value;
   console.log("city", city);
-  const apiKey = "e3eb75f5b29e8e3bb61f2eea233b6a5f"; // Replace with your API key from OpenWeatherMap
+  const apiKey = "e3eb75f5b29e8e3bb61f2eea233b6a5f";
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
   if (city.trim() === "") {
